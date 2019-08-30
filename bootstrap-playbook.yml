@@ -1,0 +1,11 @@
+---
+
+- name: bootstrap
+  hosts: all 
+  become: yes 
+  gather_facts: false
+  
+  tasks:
+    - name: update sources 
+      raw: apt-get update -y;
+      register: output

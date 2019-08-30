@@ -1,0 +1,3 @@
+---
+- name: Configure shared infrastructure 
+  import_playbook: bootstrap-playbook.yml
